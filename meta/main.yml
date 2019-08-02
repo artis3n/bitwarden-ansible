@@ -1,5 +1,5 @@
 galaxy_info:
-  role_name: bitwarden_ansible
+  role_name: bitwarden_app
   author: artis3n
   description: Installs the latest Bitwarden deb from Github.
 
@@ -22,4 +22,3 @@ galaxy_info:
     - manager
 
 dependencies: []
-  
