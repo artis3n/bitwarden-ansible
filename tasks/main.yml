@@ -1,5 +1,7 @@
 ---
 
+- import_tasks: import_os_vars.yml
+
 - name: Get latest version
   uri:
     url: "{{ bitwarden_version_url }}"
@@ -14,5 +16,6 @@
 - name: Install
   become: yes
   apt:
-    deb: "{{ bitwarden_url }}/v{{ bitwarden_version }}/Bitwarden-{{ bitwarden_version }}-amd64.deb"
+    deb: "{{ bitwarden_url }}/v{{ bitwarden_version }}/Bitwarden-{{ bitwarden_version }}-{{ package_type }}"
     state: present
+  when: ansible_distribution == "Ubuntu" or ansible_distribution == "Debian"
