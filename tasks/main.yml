@@ -1,0 +1,18 @@
+---
+
+- name: Get latest version
+  uri:
+    url: "{{ bitwarden_version_url }}"
+    body_format: json
+  changed_when: false
+  register: bitwarden_version_json
+
+- name: Set variables
+  set_fact:
+    bitwarden_version: "{{ bitwarden_version_json.json.name }}"
+
+- name: Install
+  become: yes
+  apt:
+    deb: "{{ bitwarden_url }}/v{{ bitwarden_version }}/Bitwarden-{{ bitwarden_version }}-amd64.deb"
+    state: present
