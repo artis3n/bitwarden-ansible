@@ -14,7 +14,7 @@
     bitwarden_version: "{{ bitwarden_version_json.json.name }}"
 
 - name: Install
-  become: yes
+  become: true
   apt:
     deb: "{{ bitwarden_url }}/v{{ bitwarden_version }}/Bitwarden-{{ bitwarden_version }}-{{ package_type }}"
     state: present
