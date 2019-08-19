@@ -12,3 +12,6 @@ script:
   - pipenv run molecule --version
   - pipenv run ansible --version
   - pipenv run molecule test
+
+notifications:
+  webhooks: https://galaxy.ansible.com/api/v1/notifications/
