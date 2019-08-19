@@ -1,7 +1,7 @@
 Ansible-Bitwarden
 =========
 
-[![Build Status](https://travis-ci.org/artis3n/bitwarden-app.svg?branch=master)](https://travis-ci.org/artis3n/bitwarden-app.svg?branch=master)
+[![Build Status](https://travis-ci.org/artis3n/bitwarden-app.svg?branch=master)](https://travis-ci.org/artis3n/bitwarden-app)
 
 This role installs the latest version of the Bitwarden .deb from Github. The Bitwarden deb does not auto-update, so this role can be used to install the latest version.
 
