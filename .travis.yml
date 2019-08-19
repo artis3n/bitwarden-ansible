@@ -7,7 +7,7 @@ services:
   - docker
 install:
   - pip install pipenv
-  - pipenv install
+  - pipenv install --dev
 script:
   - pipenv run molecule --version
   - pipenv run ansible --version
