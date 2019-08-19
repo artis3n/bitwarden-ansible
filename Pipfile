@@ -5,6 +5,9 @@ verify_ssl = true
 
 [dev-packages]
 ansible-lint = "*"
+molecule = "*"
+docker = "*"
+python-vagrant = "*"
 
 [packages]
 ansible = "*"
