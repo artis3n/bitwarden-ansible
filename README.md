@@ -1,7 +1,7 @@
 Ansible-Bitwarden
 =========
 
-A brief description of the role goes here.
+This role installs the latest version of the Bitwarden .deb from Github. The Bitwarden deb does not auto-update, so this role can be used to install the latest version.
 
 Requirements
 ------------
@@ -25,8 +25,6 @@ None
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
     - hosts: all
       roles:
          - { role: bitwarden_app }
@@ -39,4 +37,4 @@ BSD, MIT
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+[Artis3n](https://galaxy.ansible.com/artis3n)
