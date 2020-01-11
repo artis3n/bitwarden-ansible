@@ -28,4 +28,4 @@ jobs:
 
     - name: Molecule test
       run: |
-        pipenv run molecule test
+        molecule test
