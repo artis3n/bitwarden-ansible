@@ -17,7 +17,7 @@ Requirements
 - Pipenv (`pip3 install pipenv`)
 
 Set up the project dependencies:
-`pipenv install`
+`pipenv install --dev`
 
 Role Variables
 --------------
