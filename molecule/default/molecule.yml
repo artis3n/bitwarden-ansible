@@ -6,10 +6,10 @@ driver:
 lint:
   name: yamllint
 platforms:
-  - name: ubuntu18
-    image: ubuntu:18.04
-  - name: debian10
-    image: debian:10
+  - name: instance
+    image: geerlingguy/docker-${MOLECULE_DISTRO:-ubuntu1804}-ansible:latest
+    command: ${MOLECULE_DOCKER_COMMAND:-""}
+    pre_build_image: true
 provisioner:
   name: ansible
   lint:
@@ -18,3 +18,13 @@ verifier:
   name: testinfra
   lint:
     name: flake8
+scenario:
+  name: default
+  test_sequence:
+    - lint
+    - destroy
+    - syntax
+    - create
+    - converge
+    - idempotence
+    - destroy
