@@ -5,12 +5,11 @@ verify_ssl = true
 
 [dev-packages]
 ansible-lint = "*"
-molecule = "*"
+molecule = {extras = ["docker"],version = "*"}
 docker = "*"
-python-vagrant = "*"
 
 [packages]
 ansible = "*"
 
 [requires]
-python_version = "3.6"
+python_version = "3.7"
