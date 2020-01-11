@@ -1,5 +1,7 @@
 # Ansible-Bitwarden
 
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/artis3n/bitwarden-app/Molecule Tests](https://github.com/artis3n/bitwarden-app/actions)
+
 [![Ansible Role](https://img.shields.io/ansible/role/42458)](https://galaxy.ansible.com/artis3n/bitwarden_app)
 
 [![Ansible Role](https://img.shields.io/ansible/role/d/42458)](https://galaxy.ansible.com/artis3n/bitwarden_app)
