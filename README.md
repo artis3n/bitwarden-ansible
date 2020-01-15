@@ -8,6 +8,8 @@
 ![GitHub followers](https://img.shields.io/github/followers/artis3n?style=social)
 ![Twitter Follow](https://img.shields.io/twitter/follow/artis3n?style=social)
 
+**ARCHIVED**: I recommend installing the Bitwarden Snap package.
+
 This role installs the latest version of the Bitwarden .deb from GitHub. The Bitwarden .deb does not auto-update so this role can be used to install the latest version.
 
 Requirements
